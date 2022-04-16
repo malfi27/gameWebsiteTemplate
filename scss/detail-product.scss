@@ -1,0 +1,168 @@
+/*=============
+Font import From Google Font
+==============*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Overpass', sans-serif;
+}
+
+
+/*=============
+Reset HTML
+==============*/
+*,::before,::after{
+    box-sizing: border-box;
+}
+*,::before,::after,p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+/*=============
+Variable Collor
+==============*/
+$primary-color :#727cf5;
+$secondary-color : #0c1427;
+$background-color :#070d19;
+$font-color :#bfc3ce;
+$font-white-color :#fff;
+body {
+    background: $background-color;
+}
+
+
+.detail-product-container {
+    .wrapper-images-product {
+        .view-Images {
+            margin-bottom: 2rem;
+            .slick-slide {
+                margin: 0 10px;
+            }
+            .slick-list {
+                margin: 0 -10px;
+            }
+            .image-product {
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                    border-radius: 20px;
+                }
+            }
+        }
+        .nav-images {
+            .slick-slide {
+                margin: 0 6px;
+            }
+            .slick-list {
+                margin: 0 -6px;
+                .slick-track {
+                    display: flex;
+                    flex-wrap: nowrap;
+                }
+            }
+            .image-product {   
+                display: flex;
+                justify-content: center;
+                border-radius: 10px;
+                border: 2px solid $background-color;
+                transition: border .1s ease;
+
+                &.is-active {
+                    border: 2px solid $primary-color;
+                    transition: border .1s ease;
+                }
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                    max-width: 100px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+    }
+    .detail-product {
+        color: $font-color;
+        padding: 2rem 0 1rem 0;
+        .name-product {
+            font-weight: 600;
+            position: relative;
+            font-size: 28px;
+            &::after {
+                content: '';
+                display: block;
+                height: 5px;
+                width: 50%;
+                max-width: 200px;
+                position: absolute;
+                border-radius: 10px;
+                bottom: -12px;
+                background-color: $primary-color;
+            }
+        }
+        .wrapper-specification {
+            padding: 2rem 0 0 0;
+            h5 {
+                margin-bottom: .5rem;
+                font-weight: 600;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+.summary-container {
+    color: $font-color;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h4 {
+        font-weight: 700;
+        text-align: center;
+        position: relative;
+        width: fit-content;
+        &::after {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 50%;
+            bottom: -10px;
+            border-radius: 10px;
+            position: absolute;
+            background-color: $primary-color;
+            transform: translate(50%,50%);
+        }
+    }
+    .summary-detail {
+        width: 100%;
+        padding: 2rem 0 0 0;
+        p {
+            font-size: 14px;
+            &:not(:last-child) {
+                margin-bottom: .5rem;
+            }
+        }
+        .total-wrapper {
+            p,h5 {
+                font-size: 18px;
+            }
+            .total {
+                color: $primary-color;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 575px) {
+    .detail-product-container {
+        .detail-product {
+            .name-product {
+                font-size: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,341 @@
+/*=============
+Font import From Google Font
+==============*/
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: 'Overpass', sans-serif;
+}
+
+/*=============
+Reset HTML
+==============*/
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after, p, h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+}
+
+/*=============
+Variable Collor
+==============*/
+body {
+  background: #070d19;
+}
+
+.mainHome {
+  transition: .5s;
+}
+
+.mainHome .mainContent .containerBanner {
+  position: relative;
+}
+
+.mainHome .mainContent .containerBanner .wrapperBanner .banner img {
+  width: 100%;
+}
+
+.mainHome .mainContent .containerBanner .leftArrow, .mainHome .mainContent .containerBanner .rightArrow {
+  position: absolute;
+  top: 45%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.mainHome .mainContent .containerBanner .leftArrow ion-icon, .mainHome .mainContent .containerBanner .rightArrow ion-icon {
+  color: #fff;
+  opacity: .5;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.mainHome .mainContent .containerBanner .leftArrow ion-icon:hover, .mainHome .mainContent .containerBanner .rightArrow ion-icon:hover {
+  opacity: 1;
+  transition: .3s;
+}
+
+.mainHome .mainContent .containerBanner .leftArrow {
+  left: 15px;
+}
+
+.mainHome .mainContent .containerBanner .rightArrow {
+  right: 15px;
+}
+
+.mainHome .mainContent .containerBenefit .headerBenefit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainHome .mainContent .containerBenefit .headerBenefit .arrowsBenefit {
+  display: flex;
+  align-items: center;
+}
+
+.mainHome .mainContent .containerBenefit .headerBenefit .arrowsBenefit .btnArrow {
+  border: 2px solid #727cf5;
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.mainHome .mainContent .containerBenefit .headerBenefit .arrowsBenefit .btnArrow ion-icon {
+  color: #fff;
+  font-size: 20px;
+}
+
+.mainHome .mainContent .containerBenefit .headerBenefit .arrowsBenefit .btnArrow:not(:last-child) {
+  margin-right: .5rem;
+}
+
+.mainHome .mainContent .containerBenefit .headerBenefit .arrowsBenefit .btnArrow:hover {
+  background: #727cf5;
+  transition: .3s;
+}
+
+.mainHome .mainContent .containerBenefit .wrapperBenefit {
+  display: flex;
+  height: 100%;
+}
+
+.mainHome .mainContent .containerBenefit .wrapperBenefit .benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 3px solid #727cf5;
+  border-radius: 20px;
+  width: 100%;
+  background: #0c1427;
+  color: #bfc3ce;
+  transition: .5s;
+  height: 100%;
+}
+
+.mainHome .mainContent .containerBenefit .wrapperBenefit .benefit:hover {
+  background: #727cf5;
+  border: 3px solid #1c2741;
+  transition: .5s;
+}
+
+.mainHome .mainContent .containerBenefit .wrapperBenefit .benefit .iconBenefit {
+  width: 100%;
+}
+
+.mainHome .mainContent .containerBenefit .wrapperBenefit .benefit .nameBenefit {
+  font-weight: 800;
+}
+
+.mainHome .mainContent .containerBenefit .wrapperBenefit .slick-list .slick-track {
+  display: flex !important;
+}
+
+.mainHome .mainContent .containerBenefit .wrapperBenefit .slick-list .slick-track .slick-slide {
+  height: inherit !important;
+}
+
+.mainHome .mainContent .containerAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #0c1427;
+  border: 3px solid #1c2741;
+}
+
+.mainHome .mainContent .containerAbout .about {
+  margin-bottom: 2rem;
+  color: #bfc3ce;
+}
+
+.mainHome .mainContent .containerAbout .about .nameContent {
+  font-weight: 800;
+}
+
+.mainHome .mainContent .containerAbout .about .aboutInformation {
+  font-weight: 500;
+}
+
+.mainHome .mainContent .containerAbout .metodePembayaran .nameContent {
+  font-weight: 700;
+  color: #bfc3ce;
+  font-size: 14px;
+  margin-bottom: .5rem;
+}
+
+.mainHome .mainContent .containerAbout .metodePembayaran .wrapperMetode {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mainHome .mainContent .containerAbout .metodePembayaran .wrapperMetode .metode {
+  background: #c3c3c3;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1c2741;
+  transition: .3s;
+}
+
+.mainHome .mainContent .containerAbout .metodePembayaran .wrapperMetode .metode:hover {
+  background: #fff;
+  transition: .3s;
+}
+
+.mainHome .mainContent .containerAbout .metodePembayaran .wrapperMetode .metode:hover img {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  transition: .3s;
+}
+
+.mainHome .mainContent .containerAbout .metodePembayaran .wrapperMetode .metode img {
+  width: 100%;
+  border-radius: 4px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+
+.mainHome .mobileMenu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #0c1427;
+}
+
+.mainHome .mobileMenu .menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: #bfc3ce;
+}
+
+@media screen and (min-width: 0px) {
+  .mainHome .mainContent .containerBanner .leftArrow ion-icon, .mainHome .mainContent .containerBanner .rightArrow ion-icon {
+    font-size: 22px;
+  }
+  .mainHome .mainContent .containerBanner .wrapperBanner {
+    margin-bottom: 0;
+  }
+  .mainHome .mainContent .containerBanner .wrapperBanner .slick-dots li button::before {
+    color: #fff;
+    font-size: 6px;
+  }
+  .mainHome .mainContent .containerBenefit {
+    margin-bottom: 1.5rem;
+  }
+  .mainHome .mainContent .containerBenefit .headerBenefit {
+    margin-bottom: 1rem;
+  }
+  .mainHome .mainContent .containerBenefit .headerBenefit .nameContent {
+    font-size: 18px;
+    color: #fff;
+  }
+  .mainHome .mainContent .containerBenefit .wrapperBenefit .benefit {
+    padding: 1rem;
+    margin: .5rem;
+  }
+  .mainHome .mainContent .containerBenefit .wrapperBenefit .benefit .iconBenefit {
+    margin-bottom: 1rem;
+    max-width: 80px;
+  }
+  .mainHome .mainContent .containerBenefit .wrapperBenefit .benefit .nameBenefit {
+    font-size: 14px;
+    margin-bottom: .3rem;
+  }
+  .mainHome .mainContent .containerBenefit .wrapperBenefit .benefit .infoBenefit {
+    font-size: 10px;
+    max-width: 200px;
+  }
+  .mainHome .mainContent .containerAbout {
+    padding: 2rem 1rem;
+    border-radius: 12px;
+  }
+  .mainHome .mainContent .containerAbout .about .nameContent {
+    font-size: 16px;
+    margin-bottom: .5rem;
+  }
+  .mainHome .mainContent .containerAbout .about .aboutInformation {
+    font-size: 11px;
+    max-width: 400px;
+  }
+  .mainHome .mainContent .containerAbout .metodePembayaran .nameContent {
+    font-weight: 800;
+    color: #bfc3ce;
+  }
+  .mainHome .mainContent .containerAbout .metodePembayaran .wrapperMetode .metode {
+    padding: .5rem;
+    margin: .2rem;
+    min-width: 30px;
+    min-height: 47px;
+    max-height: 47px;
+  }
+  .mainHome .mainContent .containerAbout .metodePembayaran .wrapperMetode .metode img {
+    max-width: 55px;
+  }
+  .mainHome .mobileMenu {
+    padding: .5rem 0;
+  }
+  .mainHome .mobileMenu .menu {
+    padding: 0 2rem;
+    font-size: 12px;
+  }
+  .mainHome .mobileMenu .menu ion-icon {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mainHome .mainContent .containerBanner .leftArrow ion-icon, .mainHome .mainContent .containerBanner .rightArrow ion-icon {
+    font-size: 32px;
+  }
+  .mainHome .mainContent .containerBenefit .wrapperBenefit .benefit .infoBenefit {
+    font-size: 12px;
+    max-width: 250px;
+  }
+  .mainHome .mobileMenu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mainHome .mainContent .containerBenefit .headerBenefit .nameContent {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mainHome .mainContent .containerAbout .about .nameContent {
+    font-size: 18px;
+  }
+  .mainHome .mainContent .containerAbout .about .aboutInformation {
+    font-size: 12px;
+  }
+  .mainHome .mainContent .containerAbout .metodePembayaran .nameContent {
+    font-size: 16px;
+  }
+  .mainHome .mainContent .containerAbout .metodePembayaran .wrapperMetode .metode {
+    padding: .5rem;
+    margin: .2rem;
+    min-width: 30px;
+    min-height: 47px;
+    max-height: 47px;
+  }
+  .mainHome .mainContent .containerAbout .metodePembayaran .wrapperMetode .metode img {
+    max-width: 55px;
+  }
+}

@@ -1,0 +1,320 @@
+/*=============
+Font import From Google Font
+==============*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Overpass', sans-serif;
+}
+
+/*=============
+Reset HTML
+==============*/
+*,::before,::after{
+    box-sizing: border-box;
+}
+*,::before,::after,p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+/*=============
+Variable Collor
+==============*/
+$primary-color :#727cf5;
+$secondary-color : #0c1427;
+$background-color :#070d19;
+$font-color :#bfc3ce;
+$font-white-color :#fff;
+
+.containerGameList {
+    padding: 3rem 0;
+    .kategori-tabs {
+        justify-content: center;
+        padding: 1.5rem;
+        border: 3px solid #1c2741;
+        background-color: $secondary-color;
+        margin-bottom: 2rem;
+        border-radius: 50px;
+        .nav-link {
+            background-color: transparent;
+            border-radius: 0;
+            border: none;
+            color: $font-color;
+            font-weight: 600;
+            border-right: 1px solid #2b3754;
+            padding: .5rem 1rem;
+            &:nth-child(1) {
+                border-left: 1px solid #2b3754;
+            }
+            &:hover {
+                background-color: $primary-color;
+                color: $font-white-color;
+                border-color: $primary-color;
+            }
+        }
+    }
+    .card-product {
+        border: 3px solid $primary-color;
+        display: block;
+        border-radius: 12px;
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+        &:hover {
+            .images-product {
+                img {
+                    transform: scale(1.05);
+                    -webkit-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+        .images-product {
+            position: relative;
+            overflow: hidden;
+            img {
+                object-fit: cover;
+                object-position: center;
+                width: 100%;
+                border-radius: 12px 12px 0 0;
+                max-height: 224px;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .detail-product {
+            color: $font-color;
+            padding: 1rem .7rem;
+            .name-product {
+                margin-bottom: 1rem;
+                font-weight: 700;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .price-product {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+                .price {
+                    font-weight: 900;
+                    &.before-discount {
+                        font-size: 12px;
+                        text-decoration: line-through;
+                    }
+                    &.after-discount {
+                        color: $primary-color;
+                        padding: 0 .5rem;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .text-info {
+                font-size: 12px;
+                color: $font-color !important;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+    .viewMorePages {
+        padding: .7rem 1rem;
+        background-color: transparent;
+        border: 3px solid $primary-color;
+        color: $font-white-color;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 8px;
+        vertical-align: middle;
+        transition: .3s ease;
+        &:hover {
+            background-color: $primary-color;
+            transition: .3s ease;
+        }
+    }
+}
+@media screen and (max-width : 1199px) {
+    .containerGameList {
+        .kategori-tabs {
+            .nav-link {
+                font-size: 14px;
+            }
+        }
+        .card-product {
+            .detail-product {
+                .name-product {
+                    font-size: 16px;
+                }
+                .price-product {
+                    .price {
+                        &.after-discount {
+                            font-size: 16px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width : 991px) {
+    .containerGameList {
+        .kategori-tabs {
+            .nav-link {
+                font-size: 14px;
+            }
+        }
+        .card-product {
+            .detail-product {
+                .name-product {
+                    font-size: 14px;
+                }
+                .price-product {
+                    .price {
+                        &.before-discount {
+                            font-size: 10px !important;
+                        }
+                        &.after-discount {
+                            font-size: 14px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width : 767px) {
+    .containerGameList {
+        .kategori-tabs {
+            .nav-link {
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media screen and (max-width : 575px) {
+    .containerGameList {
+        .kategori-tabs {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            .nav-link {
+                border-right: 1px solid #2b3754;
+                border-left: 1px solid #2b3754;
+                width: fit-content;
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        .card-product {
+            .detail-product {
+                .name-product {
+                    font-size: 14px;
+                }
+                .price-product {
+                    flex-direction: column-reverse;
+                    align-items: flex-start !important;
+                    .price {
+                        &.before-discount {
+                            font-size: 12px !important;
+                        }
+                        &.after-discount {
+                            font-size: 18px !important;
+                            padding: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//Card Style
+.card {
+    background-color: $secondary-color;
+    padding: 1rem;
+    box-shadow: none;
+    border: 3px solid #1c2741;
+    border-radius: 20px;
+}
+
+.mainContent {
+    padding: 6rem 0 2rem 0;
+}
+
+//button component {
+.button {
+    border-radius: 8px;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: $font-white-color;
+    &:hover {
+        color: $font-white-color;
+    }
+    &.button-primary {
+        background-color: $primary-color;
+        transition: background-color .2s ease;
+        &:hover {
+            background-color: #5861c0;
+            transition: background-color .2s ease;
+        }
+    }
+}
+
+
+footer {
+    padding: 1.5rem 0;
+    color: $font-color;
+    background-color: $secondary-color;
+    display: block;
+    .logo {
+        margin-bottom: 1rem;
+        img {
+            width: 100%;
+            max-width: 124px;
+        }
+    }
+    .tentang {
+        margin-bottom: 1rem;
+    }
+    .socialMedia {
+        .sosmed {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: $primary-color;
+            ion-icon {
+                margin-right: 4px;
+            }
+        }
+    }
+    .rightSide {
+        h4 {
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .article-page {
+            display: flex;
+            flex-direction: column;
+            a {
+                text-decoration: none;
+                color: $font-color;
+                margin-bottom: 6px;
+            }
+        }
+    }
+}
+@media screen and (max-width :767px) {
+    footer {
+        margin-bottom: 2.8rem;
+    }
+}
+@media screen and (max-width :575px) {
+    footer {
+        font-size: 12px !important;
+    }
+}

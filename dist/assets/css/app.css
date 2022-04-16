@@ -1,0 +1,298 @@
+/*=============
+Font import From Google Font
+==============*/
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: 'Overpass', sans-serif;
+}
+
+/*=============
+Reset HTML
+==============*/
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+}
+
+/*=============
+Variable Collor
+==============*/
+.containerGameList {
+  padding: 3rem 0;
+}
+
+.containerGameList .kategori-tabs {
+  justify-content: center;
+  padding: 1.5rem;
+  border: 3px solid #1c2741;
+  background-color: #0c1427;
+  margin-bottom: 2rem;
+  border-radius: 50px;
+}
+
+.containerGameList .kategori-tabs .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  color: #bfc3ce;
+  font-weight: 600;
+  border-right: 1px solid #2b3754;
+  padding: .5rem 1rem;
+}
+
+.containerGameList .kategori-tabs .nav-link:nth-child(1) {
+  border-left: 1px solid #2b3754;
+}
+
+.containerGameList .kategori-tabs .nav-link:hover {
+  background-color: #727cf5;
+  color: #fff;
+  border-color: #727cf5;
+}
+
+.containerGameList .card-product {
+  border: 3px solid #727cf5;
+  display: block;
+  border-radius: 12px;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+
+.containerGameList .card-product:hover .images-product img {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.containerGameList .card-product .images-product {
+  position: relative;
+  overflow: hidden;
+}
+
+.containerGameList .card-product .images-product img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  max-height: 224px;
+  transition: all 0.3s ease-in-out;
+}
+
+.containerGameList .card-product .detail-product {
+  color: #bfc3ce;
+  padding: 1rem .7rem;
+}
+
+.containerGameList .card-product .detail-product .name-product {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.containerGameList .card-product .detail-product .price-product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.containerGameList .card-product .detail-product .price-product .price {
+  font-weight: 900;
+}
+
+.containerGameList .card-product .detail-product .price-product .price.before-discount {
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.containerGameList .card-product .detail-product .price-product .price.after-discount {
+  color: #727cf5;
+  padding: 0 .5rem;
+  font-size: 20px;
+}
+
+.containerGameList .card-product .detail-product .text-info {
+  font-size: 12px;
+  color: #bfc3ce !important;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.containerGameList .viewMorePages {
+  padding: .7rem 1rem;
+  background-color: transparent;
+  border: 3px solid #727cf5;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  vertical-align: middle;
+  transition: .3s ease;
+}
+
+.containerGameList .viewMorePages:hover {
+  background-color: #727cf5;
+  transition: .3s ease;
+}
+
+@media screen and (max-width: 1199px) {
+  .containerGameList .kategori-tabs .nav-link {
+    font-size: 14px;
+  }
+  .containerGameList .card-product .detail-product .name-product {
+    font-size: 16px;
+  }
+  .containerGameList .card-product .detail-product .price-product .price.after-discount {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .containerGameList .kategori-tabs .nav-link {
+    font-size: 14px;
+  }
+  .containerGameList .card-product .detail-product .name-product {
+    font-size: 14px;
+  }
+  .containerGameList .card-product .detail-product .price-product .price.before-discount {
+    font-size: 10px !important;
+  }
+  .containerGameList .card-product .detail-product .price-product .price.after-discount {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .containerGameList .kategori-tabs .nav-link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .containerGameList .kategori-tabs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .containerGameList .kategori-tabs .nav-link {
+    border-right: 1px solid #2b3754;
+    border-left: 1px solid #2b3754;
+    width: fit-content;
+  }
+  .containerGameList .kategori-tabs .nav-link:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .containerGameList .card-product .detail-product .name-product {
+    font-size: 14px;
+  }
+  .containerGameList .card-product .detail-product .price-product {
+    flex-direction: column-reverse;
+    align-items: flex-start !important;
+  }
+  .containerGameList .card-product .detail-product .price-product .price.before-discount {
+    font-size: 12px !important;
+  }
+  .containerGameList .card-product .detail-product .price-product .price.after-discount {
+    font-size: 18px !important;
+    padding: 0 !important;
+  }
+}
+
+.card {
+  background-color: #0c1427;
+  padding: 1rem;
+  box-shadow: none;
+  border: 3px solid #1c2741;
+  border-radius: 20px;
+}
+
+.mainContent {
+  padding: 6rem 0 2rem 0;
+}
+
+.button {
+  border-radius: 8px;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button.button-primary {
+  background-color: #727cf5;
+  transition: background-color .2s ease;
+}
+
+.button.button-primary:hover {
+  background-color: #5861c0;
+  transition: background-color .2s ease;
+}
+
+footer {
+  padding: 1.5rem 0;
+  color: #bfc3ce;
+  background-color: #0c1427;
+  display: block;
+}
+
+footer .logo {
+  margin-bottom: 1rem;
+}
+
+footer .logo img {
+  width: 100%;
+  max-width: 124px;
+}
+
+footer .tentang {
+  margin-bottom: 1rem;
+}
+
+footer .socialMedia .sosmed {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #727cf5;
+}
+
+footer .socialMedia .sosmed ion-icon {
+  margin-right: 4px;
+}
+
+footer .rightSide h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer .rightSide .article-page {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .rightSide .article-page a {
+  text-decoration: none;
+  color: #bfc3ce;
+  margin-bottom: 6px;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    margin-bottom: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  footer {
+    font-size: 12px !important;
+  }
+}
