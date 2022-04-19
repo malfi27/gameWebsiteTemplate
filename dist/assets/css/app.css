@@ -218,6 +218,7 @@ Variable Collor
 }
 
 .button {
+  border: none;
   border-radius: 8px;
   padding: .5rem 1rem;
   text-decoration: none;
@@ -236,6 +237,193 @@ Variable Collor
 .button.button-primary:hover {
   background-color: #5861c0;
   transition: background-color .2s ease;
+}
+
+.priceFilterContainer h4 {
+  text-align: center;
+  color: #bfc3ce;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.priceFilterContainer h4::after {
+  content: '';
+  display: block;
+  width: 25%;
+  background-color: #727cf5;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(150%, 300%);
+}
+
+.priceFilterContainer .priceFilterWrapper {
+  /* Style toddler input range */
+  /* Style track input range */
+}
+
+.priceFilterContainer .priceFilterWrapper .priceNumberValue {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: .5rem;
+}
+
+.priceFilterContainer .priceFilterWrapper .priceNumberValue .price-wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+.priceFilterContainer .priceFilterWrapper .priceNumberValue .price-wrap:last-child input {
+  text-align: right;
+  width: 30px;
+  color: #bfc3ce;
+}
+
+.priceFilterContainer .priceFilterWrapper .priceNumberValue .price-wrap:last-child label {
+  text-align: right;
+  width: 100%;
+  color: #bfc3ce;
+}
+
+.priceFilterContainer .priceFilterWrapper .priceNumberValue .price-wrap input {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-right: 2px;
+  background: 0;
+  border: 0;
+  outline: 0;
+  color: #bfc3ce;
+}
+
+.priceFilterContainer .priceFilterWrapper .priceNumberValue .price-wrap label {
+  width: 14 px;
+  text-align: left;
+  color: #bfc3ce;
+}
+
+.priceFilterContainer .priceFilterWrapper .price-field {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.priceFilterContainer .priceFilterWrapper .price-field input[type=range] {
+  width: 100%;
+  position: absolute;
+  height: 2px;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  pointer-events: none;
+  -webkit-appearance: none;
+}
+
+.priceFilterContainer .priceFilterWrapper .price-field input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.priceFilterContainer .priceFilterWrapper .price-field input[type=range]:active,
+.priceFilterContainer .priceFilterWrapper .price-field input[type=range]:focus {
+  outline: 0;
+}
+
+.priceFilterContainer .priceFilterWrapper .price-field input[type=range]::-ms-track {
+  width: 100%;
+  height: 2px;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  pointer-events: none;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+  border-radius: 5px;
+}
+
+.priceFilterContainer .priceFilterWrapper .price-field input[type=range]::-webkit-slider-thumb {
+  /* WebKit/Blink */
+  position: relative;
+  -webkit-appearance: none;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin-top: -4px;
+  background-color: #727cf5;
+  cursor: pointer;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 100;
+}
+
+.priceFilterContainer .priceFilterWrapper .price-field input[type=range]::-moz-range-thumb {
+  /* Firefox */
+  position: relative;
+  appearance: none;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin-top: -5px;
+  background-color: #727cf5;
+  cursor: pointer;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 100;
+}
+
+.priceFilterContainer .priceFilterWrapper .price-field input[type=range]::-ms-thumb {
+  /* IE */
+  position: relative;
+  appearance: none;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin-top: -5px;
+  background-color: #727cf5;
+  cursor: pointer;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 100;
+}
+
+.priceFilterContainer .priceFilterWrapper .price-field input[type=range]::-webkit-slider-runnable-track {
+  /* WebKit/Blink */
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: #727cf5;
+  border-radius: 5px;
+}
+
+.priceFilterContainer .priceFilterWrapper .price-field input[type=range]::-moz-range-track {
+  /* Firefox */
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: #727cf5;
+  border-radius: 5px;
+}
+
+.priceFilterContainer .priceFilterWrapper .price-field input[type=range]::-ms-track {
+  /* IE */
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: #727cf5;
+  border-radius: 5px;
 }
 
 footer {
@@ -295,4 +483,15 @@ footer .rightSide .article-page a {
   footer {
     font-size: 12px !important;
   }
+}
+
+.form-input .form-label {
+  color: #bfc3ce;
+}
+
+.form-input .form-control {
+  border: 2px solid #727cf5;
+  background-color: #070d19;
+  color: #bfc3ce;
+  border-radius: 10px;
 }

@@ -248,6 +248,7 @@ $font-white-color :#fff;
 
 //button component {
 .button {
+    border: none;
     border-radius: 8px;
     padding: .5rem 1rem;
     text-decoration: none;
@@ -265,6 +266,179 @@ $font-white-color :#fff;
     }
 }
 
+//Filter Harga 
+.priceFilterContainer {
+    h4 {
+        text-align: center;
+        color: $font-color;
+        position: relative;
+        margin-bottom: 2rem;
+        &::after {
+            content: '';
+            display: block;
+            width: 25%;
+            background-color: $primary-color;
+            height: 3px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: translate(150%,300%);
+        }
+    }
+    .priceFilterWrapper {
+      .priceNumberValue {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: .5rem;
+        .price-wrap {
+          display: flex;
+          flex-direction: row-reverse;
+          width: 100%;
+          &:last-child {
+            input {
+              text-align: right;
+              width: 30px;
+              color: $font-color;
+
+            }
+            label {
+              text-align: right;
+              width: 100%;
+              color: $font-color;
+            }
+          }
+          input {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            margin-right: 2px;
+            background:  0;
+            border: 0;
+            outline: 0;
+            color: $font-color;
+          }
+          label {
+            width: 14 px;
+            text-align: left;
+            color: $font-color;
+          }
+        }
+      }
+      .price-field {
+        position: relative;
+        margin-bottom: 2rem;
+      }
+      .price-field input[type=range] {
+        width: 100%;
+        position: absolute;
+        height: 2px; 
+        border: 0;
+        outline: 0;
+        box-sizing: border-box;
+        border-radius: 5px;
+        pointer-events: none;
+        -webkit-appearance: none;
+      }
+      .price-field input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+      }
+      .price-field input[type=range]:active,
+      .price-field input[type=range]:focus {
+        outline: 0;
+      }
+      .price-field input[type=range]::-ms-track {
+        width: 100%;
+        height: 2px; 
+        border: 0;
+        outline: 0;
+        box-sizing: border-box;
+        border-radius: 5px;
+        pointer-events: none;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+        border-radius: 5px;
+      }
+      /* Style toddler input range */
+      .price-field input[type=range]::-webkit-slider-thumb { 
+        /* WebKit/Blink */
+          position: relative;
+          -webkit-appearance: none;
+          margin: 0;
+          border: 0;
+          outline: 0;
+          border-radius: 50%;
+          height: 15px;
+          width: 15px;
+          margin-top: -4px;
+          background-color: $primary-color;
+          cursor: pointer;
+          cursor: pointer;
+          pointer-events: all;
+          z-index: 100;
+      }
+      .price-field input[type=range]::-moz-range-thumb { 
+        /* Firefox */
+        position: relative;
+        appearance: none;
+        margin: 0;
+        border: 0;
+        outline: 0;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        margin-top: -5px;
+        background-color: $primary-color;
+        cursor: pointer;
+        cursor: pointer;
+        pointer-events: all;
+        z-index: 100;
+      }
+      .price-field input[type=range]::-ms-thumb  { 
+        /* IE */
+        position: relative;
+        appearance: none;
+        margin: 0;
+        border: 0;
+        outline: 0;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        margin-top: -5px;
+        background-color: $primary-color;
+        cursor: pointer;
+        cursor: pointer;
+        pointer-events: all;
+        z-index: 100;
+      }
+      /* Style track input range */
+      .price-field input[type=range]::-webkit-slider-runnable-track { 
+        /* WebKit/Blink */
+        width: 100%;
+        height: 3px;
+        cursor: pointer;
+        background: $primary-color;
+        border-radius: 5px;
+      }
+      .price-field input[type=range]::-moz-range-track { 
+        /* Firefox */
+        width: 100%;
+        height: 3px;
+        cursor: pointer;
+        background: $primary-color;
+        border-radius: 5px;
+      }
+      .price-field input[type=range]::-ms-track { 
+        /* IE */
+        width: 100%;
+        height: 3px;
+        cursor: pointer;
+        background: $primary-color;
+        border-radius: 5px;
+      }
+    }
+  }
 
 footer {
     padding: 1.5rem 0;
@@ -316,5 +490,20 @@ footer {
 @media screen and (max-width :575px) {
     footer {
         font-size: 12px !important;
+    }
+}
+
+
+
+//Form-input 
+.form-input {
+    .form-label {
+        color: $font-color;
+    }
+    .form-control {
+        border: 2px solid $primary-color;
+        background-color: $background-color;
+        color: $font-color;
+        border-radius: 10px;
     }
 }

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama</title>
+    <link rel="icon" href="./assets/images/logo sunsky - icon.ico" />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!--OWL Carousel-->
+    <link rel="stylesheet" href="./assets/vendor/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/vendor/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/vendor/slick/slick.css">
+    <link rel="stylesheet" href="./assets/vendor/slick/slick-theme.css">
+    <!--Component-->
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/mobile-menu.css">
+    <!--Style Css-->
+    <link rel="stylesheet" href="./assets/css/search-page.css">
+</head>
+<body>
+
+    <section class="mainHome">
+        <!--Navbar Menu-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+              <div class="navbarMobile">
+                    <a href="#" class="navbarIcon">
+                        <!-- <img src="./assets/images/onlyIcon.png" alt=""> -->
+                        Logo Store
+                    </a>
+                    <a href="#" class="nameBrand">
+                        <!-- <img src="./assets/images/onlyNameBrand.png" alt=""> -->
+                        Nama Store
+                    </a>
+                    <div class="userControl">
+                        <a href="#" class="search">
+                            <ion-icon name="search-sharp"></ion-icon>
+                        </a>
+                        <!-- <a href="login.html" class="login">
+                            <ion-icon name="person-sharp"></ion-icon>
+                        </a> -->
+                    </div>
+              </div>
+              <div class="navbarDesktop">
+                    <a href="#" class="iconBrand">
+                        <!-- <img src="./assets/images/brandLogo.png" alt=""> -->
+                        Logo Brand
+                    </a>
+                    <div class="userControl">
+                        <a href="#" class="search">
+                            <ion-icon name="search-sharp"></ion-icon>
+                            Cari Product
+                        </a>
+                        <!-- <a href="login.html" class="login">
+                            <ion-icon name="person-sharp"></ion-icon>
+                            Log In
+                        </a> -->
+                    </div>
+              </div>
+            </div>
+        </nav>
+        <!--End Navbar Menu-->
+
+        <!--Main Content-->
+        <div class="mainContent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-5">
+                        <div class="form-input">
+                            <label for="search" class="form-label">Search Game</label>
+                            <input type="search" id="search" class="form-control" placeholder="Cari Game Anda">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                        <div class="priceFilterContainer card">
+                            <h4>Price Filter</h4>
+                            <div class="priceFilterWrapper">
+                                <div class="priceNumberValue">
+                                    <div class="price-wrap">
+                                        <input id="one">
+                                        <label for="one">$</label>
+                                    </div>
+                                    <div class="price-wrap">
+                                        <input id="two">
+                                        <label for="two">$</label>
+                                    </div>
+                                </div>
+                                <div class="price-field">
+                                    <input type="range"  min="100" max="500" value="100" id="lower">
+                                    <input type="range" min="100" max="500" value="500" id="upper">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button class="button button-primary md-button">Apply Filter</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9 search-result">
+                        <h5>Search result of "<span>Mobile Legends</span>"</h5>
+                        <div class="containerGameList">
+                            <div class="row">
+                                <div class="col-6 col-lg-4">
+                                    <a href="#" class="card-product">
+                                        <div class="images-product">
+                                            <img src="./assets/images/logoGame/Logo Game - Dragon Raja.png" alt="">
+                                        </div>
+                                        <div class="detail-product">
+                                            <h5 class="name-product">Mobile Legends Width Skin Starlight Lorem ipsum dolor sit amet.</h5>
+                                            <div class="price-product">
+                                                <p class="before-discount price">Rp 150.000</p>
+                                                <p class="after-discount price">Rp 120.000.000</p>
+                                            </div>
+                                            <p class="text-info">Click for more detail</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <a href="#" class="card-product">
+                                        <div class="images-product">
+                                            <img src="./assets/images/logoGame/Logo Game - Dragon Raja.png" alt="">
+                                        </div>
+                                        <div class="detail-product">
+                                            <h5 class="name-product">Mobile Legends Width Skin Starlight Lorem ipsum dolor sit amet.</h5>
+                                            <div class="price-product">
+                                                <p class="before-discount price">Rp 150.000</p>
+                                                <p class="after-discount price">Rp 120.000.000</p>
+                                            </div>
+                                            <p class="text-info">Click for more detail</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <a href="#" class="card-product">
+                                        <div class="images-product">
+                                            <img src="./assets/images/logoGame/Logo Game - Dragon Raja.png" alt="">
+                                        </div>
+                                        <div class="detail-product">
+                                            <h5 class="name-product">Mobile Legends Width Skin Starlight Lorem ipsum dolor sit amet.</h5>
+                                            <div class="price-product">
+                                                <p class="before-discount price">Rp 150.000</p>
+                                                <p class="after-discount price">Rp 120.000.000</p>
+                                            </div>
+                                            <p class="text-info">Click for more detail</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <a href="#" class="card-product">
+                                        <div class="images-product">
+                                            <img src="./assets/images/logoGame/Logo Game - Dragon Raja.png" alt="">
+                                        </div>
+                                        <div class="detail-product">
+                                            <h5 class="name-product">Mobile Legends Width Skin Starlight Lorem ipsum dolor sit amet.</h5>
+                                            <div class="price-product">
+                                                <p class="before-discount price">Rp 150.000</p>
+                                                <p class="after-discount price">Rp 120.000.000</p>
+                                            </div>
+                                            <p class="text-info">Click for more detail</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <a href="#" class="card-product">
+                                        <div class="images-product">
+                                            <img src="./assets/images/logoGame/Logo Game - Dragon Raja.png" alt="">
+                                        </div>
+                                        <div class="detail-product">
+                                            <h5 class="name-product">Mobile Legends Width Skin Starlight Lorem ipsum dolor sit amet.</h5>
+                                            <div class="price-product">
+                                                <p class="before-discount price">Rp 150.000</p>
+                                                <p class="after-discount price">Rp 120.000.000</p>
+                                            </div>
+                                            <p class="text-info">Click for more detail</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Main Content-->
+
+        <!--Mobile Menu-->
+        <div class="mobileMenu fixed-bottom">
+            <a href="#" class="menu">
+                <ion-icon name="home-outline"></ion-icon>
+                Beranda
+            </a>
+            <a href="#" class="menu">
+                <ion-icon name="call-outline"></ion-icon>
+                Contact
+            </a>
+        </div>
+        <!--End Mobile Menu-->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                        <div class="logo">
+                            <img src="./assets/images/brandLogo.png" alt="">
+                        </div>
+                        <p class="tentang">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ex pariatur odio doloremque, ab in sint commodi modi, aliquid natus animi? Odio, corrupti dolores expedita suscipit debitis veniam consequuntur eum incidunt totam nam voluptatum? Sit earum consequatur ullam. Dolorum, dolore voluptate corrupti quasi omnis perspiciatis sequi tempora repellat nobis laboriosam.</p>
+                        <div class="socialMedia">
+                            <a href="#" class="sosmed">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                                Namegameinstagram
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="rightSide">
+                            <h4>Mungkin Kamu Suka</h4>
+                            <div class="article-page">
+                                <a href="#">Mobile Legends</a>
+                                <a href="#">PUBG Mobile</a>
+                                <a href="#">Free Fire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+    <!--Jquery-->
+    <script src="./assets/vendor/jquery/jquery.min.js"></script>
+    <!--Bootstrap JS-->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Owl Js-->
+    <script src="./assets/vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./assets/vendor/slick/slick.min.js"></script>
+    <!--IonIcon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--MainJs-->
+    <script src="./assets/js/home.js"></script>
+    <script>
+
+        //Filter Price
+        var lowerSlider = document.querySelector('#lower');
+        var  upperSlider = document.querySelector('#upper');
+
+        document.querySelector('#two').value=upperSlider.value;
+        document.querySelector('#one').value=lowerSlider.value;
+
+        var  lowerVal = parseInt(lowerSlider.value);
+        var upperVal = parseInt(upperSlider.value);
+
+        upperSlider.oninput = function () {
+            lowerVal = parseInt(lowerSlider.value);
+            upperVal = parseInt(upperSlider.value);
+
+            if (upperVal < lowerVal + 4) {
+                lowerSlider.value = upperVal - 4;
+                if (lowerVal == lowerSlider.min) {
+                upperSlider.value = 4;
+                }
+            }
+            document.querySelector('#two').value=this.value
+        };
+
+        lowerSlider.oninput = function () {
+            lowerVal = parseInt(lowerSlider.value);
+            upperVal = parseInt(upperSlider.value);
+            if (lowerVal > upperVal - 4) {
+                upperSlider.value = lowerVal + 4;
+                if (upperVal == upperSlider.max) {
+                    lowerSlider.value = parseInt(upperSlider.max) - 4;
+                }
+            }
+            document.querySelector('#one').value=this.value
+        };
+    </script>
+</body>
+</html>
