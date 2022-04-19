@@ -239,6 +239,12 @@ Variable Collor
   transition: background-color .2s ease;
 }
 
+@media screen and (max-width: 575px) {
+  .button {
+    font-size: 12px;
+  }
+}
+
 .priceFilterContainer h4 {
   text-align: center;
   color: #bfc3ce;
