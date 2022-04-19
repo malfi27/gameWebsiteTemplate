@@ -25,3 +25,21 @@ Variable Collor
 .search-result h5 {
   color: #bfc3ce;
 }
+
+.search-result .filter-category {
+  display: flex;
+  align-items: center;
+}
+
+.search-result .filter-category label {
+  margin-right: .5rem;
+  color: #bfc3ce;
+}
+
+.search-result .filter-category .form-select {
+  border: 2px solid #727cf5;
+  background-color: #070d19;
+  color: #bfc3ce;
+  border-radius: 10px;
+  width: fit-content;
+}

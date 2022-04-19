@@ -139,7 +139,7 @@ body {
     display: flex;
   }
   .mainHome .navbar .container .navbarMobile .navbarIcon img {
-    max-width: 30px;
+    max-width: 50px;
   }
   .mainHome .navbar .container .navbarMobile .nameBrand img {
     max-width: 80px;
@@ -164,7 +164,7 @@ body {
     display: flex;
   }
   .mainHome .navbar .container .navbarDesktop .iconBrand img {
-    max-width: 100px;
+    max-width: 84px;
   }
   .mainHome .navbar .container .navbarDesktop .userControl a {
     font-size: 14px;

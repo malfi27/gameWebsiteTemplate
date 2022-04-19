@@ -32,4 +32,19 @@ $font-white-color :#fff;
     h5 {
         color: $font-color;
     }
+    .filter-category {
+        display: flex;
+        align-items: center;
+        label {
+            margin-right: .5rem;
+            color: $font-color;
+        }  
+        .form-select {
+            border: 2px solid $primary-color;
+            background-color: $background-color;
+            color: $font-color;
+            border-radius: 10px;
+            width: fit-content;
+        }      
+    }
 }
